@@ -21,22 +21,24 @@ namespace XamarinMaps.WebView
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var webView = FindViewById<Android.Webkit.WebView>(Resource.Id.webView);
+            Android.Webkit.WebView webView = (Android.Webkit.WebView)FindViewById(Resource.Id.webView);
             webView.Settings.JavaScriptEnabled = true;
+            webView.LoadUrl("http://maps.googleapis.com/maps/api/staticmap?ll=36.97,%20-122&lci=bike&z=13&t=p&size=500x500&sensor=true");
 
             // Use subclassed WebViewClient to intercept hybrid native calls
-            webView.SetWebViewClient(new HybridWebViewClient());
+            //webView.SetWebViewClient(new HybridWebViewClient());
 
-            // Render the view from the type generated from RazorView.cshtml
-            var model = new Model1() { Text = "Text goes here" };
-            var template = new RazorView() { Model = model };
-            var page = template.GenerateString();
+            //// Render the view from the type generated from RazorView.cshtml
+            //var model = new Model1() { Text = "Text goes here" };
+            //var template = new RazorView() { Model = model };
+            //var page = template.GenerateString();
 
-            // Load the rendered HTML into the view with a base URL 
-            // that points to the root of the bundled Assets folder
-            webView.LoadDataWithBaseURL("file:///android_asset/", page, "text/html", "UTF-8", null);
+            //// Load the rendered HTML into the view with a base URL 
+            //// that points to the root of the bundled Assets folder
+            //webView.LoadDataWithBaseURL("file:///android_asset/", page, "text/html", "UTF-8", null);
 
-        }
+        }        
+        
 
         private class HybridWebViewClient : WebViewClient
         {
