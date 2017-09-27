@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMaps.WebView", "Xama
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMaps.SingleView", "XamarinMaps.SingleView\XamarinMaps.SingleView.csproj", "{018A18D3-A046-452A-BEE2-125BB4F9B1BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMaps.Blank", "XamarinMaps.Blank\XamarinMaps.Blank.csproj", "{CA3E7641-D576-4EEA-8993-950B49D08E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{018A18D3-A046-452A-BEE2-125BB4F9B1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{018A18D3-A046-452A-BEE2-125BB4F9B1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{018A18D3-A046-452A-BEE2-125BB4F9B1BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3E7641-D576-4EEA-8993-950B49D08E57}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
